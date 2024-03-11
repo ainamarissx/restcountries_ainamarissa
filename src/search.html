@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <link rel="stylesheet" href="search.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="header-container">
+            <img src="flyyy.png" alt="Travel Tracker Logo"> <!-- Logo image -->
+            <h1 onclick="goToWelcomePage()">Travel Tracker</h1> <!-- Header title -->
+        </div>
+    </header>
+
+    <!-- Main content container -->
+    <div class="container">
+        <h2>Search for Country Details</h2> <!-- Main heading -->
+        <!-- Input group for search -->
+        <div class="input-group">
+            <label for="countryInput">Enter a country name:</label> <!-- Label for input -->
+            <input type="text" id="countryInput" placeholder="Country Name"> <!-- Input field -->
+            <button type="button" onclick="getCountryDetails()">Search</button> <!-- Search button -->
+        </div>
+        
+        <!-- Container to display country details -->
+        <div id="countryDetails" class="details-container">
+            <img id="flag" width="300" height="auto"> <!-- Image for country flag -->
+            <p id="commonName"></p> <!-- Paragraph for common name -->
+            <p id="officialName"></p> <!-- Paragraph for official name -->
+            <p id="capital"></p> <!-- Paragraph for capital -->
+            <p id="currencies"></p> <!-- Paragraph for currencies -->
+            <p id="region"></p> <!-- Paragraph for region -->
+            <p id="languages"></p> <!-- Paragraph for languages -->
+            <p id="population"></p> <!-- Paragraph for population -->
+            <p id="location"></p> <!-- Paragraph for location -->
+            <p id="continent"></p> <!-- Paragraph for continent -->
+            <p id="googleMap"></p> <!-- Paragraph for Google Map -->
+        </div>
+        <br>
+        <button onclick="goToWelcomePage()">Back</button> <!-- Button to go back to welcome page -->
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Travel Tracker. All rights reserved.</p> <!-- Footer text -->
+    </footer>
+
+    <script src="main.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

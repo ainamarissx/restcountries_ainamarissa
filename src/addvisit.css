@@ -1,0 +1,271 @@
+body {
+  font-family: Arial, sans-serif; /* Set font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f1e9e1; /* Set background color */
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  text-align: center; /* Center align text */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+  }
+}
+
+.container {
+  max-width: 800px; /* Set maximum width */
+  margin: 20px auto; /* Center container horizontally with 20px margin from top */
+  text-align: center; /* Center align text */
+  color: #424242; /* Set text color */
+  animation: slideIn 1s ease-in-out; /* Slide-in animation */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  height: 1000vh; /* Adjusted height to exceed viewport height */
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds container height */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px); /* Slide from top */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    transform: translateY(0); /* Slide to normal position */
+    opacity: 1; /* End with opacity 1 */
+  }
+}
+
+button {
+  display: block; /* Display buttons as block elements */
+  margin: 0 auto; /* Center align buttons horizontally */
+  padding: 10px 20px; /* Add padding */
+  background-color: #cfe0d8; /* Set background color */
+  color: #424242; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #B7DBD6; /* Darker background color on hover */
+  color: #424242; /* Change text color on hover */
+}
+
+header {
+  background-color: #B7DBD6; /* Set background color */
+  color: #424242; /* Set text color */
+  padding: 10px 0; /* Add padding */
+}
+
+.header-container {
+  display: flex; /* Use flexbox for layout */
+  max-width: 800px; /* Set maximum width */
+  align-items: center; /* Center align items vertically */
+}
+
+.header-container img {
+  width: 15%; /* Set image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add margin */
+  border-radius: 50%; /* Make image circular */
+  margin-left: 10%; /* Add margin */
+  animation: rotate 2s linear infinite; /* Rotate animation */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Start with no rotation */
+  }
+  to {
+    transform: rotate(360deg); /* End with full rotation */
+  }
+}
+
+header h1 {
+  margin: 3%; /* Add margin */
+  font-size: 36px; /* Set font size */
+  color: #333; /* Set text color */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Add text shadow */
+}
+
+header h1:hover {
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+h2 {
+  text-align: center; /* Center align text */
+  color: #424242; /* Set text color */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #B7DBD6; /* Set background color */
+  color: #424242; /* Set text color */
+  padding: 10px 0; /* Add padding */
+  position: fixed; /* Fix footer position */
+  bottom: 0; /* Stick to bottom */
+  width: 100%; /* Set full width */
+  text-align: center; /* Center align text */
+  animation: slideInUp 1s ease-in-out; /* Slide-in animation */
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%); /* Slide from bottom */
+  }
+  to {
+    transform: translateY(0); /* Slide to normal position */
+  }
+}
+
+.box {
+  width: calc(60% - 10px); /* Adjusted width for two boxes */
+  padding: 1%; /* Add padding */
+  background-color: #fff; /* Set background color */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  margin: 5%; /* Add margin */
+}
+
+/* Wishlist and Places Visited Styles */
+
+#wishlist,
+#placesVisited {
+  display: flex; /* Use flexbox for layout */
+  margin: 20px auto; /* Center horizontally with margin */
+  max-width: 800px; /* Set maximum width */
+}
+
+#wishlist {
+  justify-content: flex-start; /* Align wishlist to the left */
+}
+
+#placesVisited {
+  justify-content: flex-end; /* Align places visited to the right */
+}
+
+#wishlist h3,
+#placesVisited h3 {
+  text-align: center; /* Center align text */
+  color: #424242; /* Set text color */
+}
+
+#wishlistItems,
+#visitedItems {
+  list-style: none; /* Remove list styles */
+  padding: 0; /* Remove default padding */
+  width: 60%; /* Set width */
+  margin-left: 20%; /* Add margin */
+  text-align: center; /* Center align text */
+}
+
+#wishlistItems li,
+#visitedItems li {
+  margin-bottom: 20%; /* Add margin */
+  padding: 10px; /* Add padding */
+  background-color: #ffffff; /* Set background color */
+  border-radius: 5px; /* Add border radius */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+#wishlistItems li {
+  border-left: 5px solid #FF6F61; /* Change color for wishlist items */
+}
+
+#visitedItems li {
+  border-left: 5px solid #70A288; /* Change color for visited items */
+}
+
+/* Animation for list items */
+@keyframes fadeInListItem {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(-10px); /* Slide from top */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+    transform: translateY(0); /* Slide to normal position */
+  }
+}
+
+#wishlistItems li,
+#visitedItems li {
+  animation: fadeInListItem 0.5s ease forwards; /* Apply animation */
+}
+
+/* Add styles for Wishlist and Places Visited Titles */
+#wishlistTitle,
+#placesVisitedTitle {
+  text-align: center; /* Center align text */
+  color: #424242; /* Set text color */
+  margin-bottom: 10px; /* Add margin */
+}
+
+#titlesContainer {
+  color: #424242; /* Set text color */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between items */
+}
+
+#titlesContainer > div {
+  flex: 1; /* Grow to fill available space */
+  margin: 0 5px; /* Add margin */
+}
+
+/* CSS for Form Styles */
+
+form {
+  text-align: center; /* Center align text */
+  color: #424242; /* Set text color */
+  margin-bottom: 20px; /* Add margin */
+}
+
+form label {
+  display: block; /* Display block */
+  margin-bottom: 5px; /* Add margin */
+  color: #424242; /* Set text color */
+}
+
+form input[type="text"] {
+  width: 80%; /* Set width */
+  padding: 8px; /* Add padding */
+  margin-bottom: 10px; /* Add margin */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+form button[type="submit"] {
+  padding: 10px 20px; /* Add padding */
+  background-color: #cfe0d8; /* Set background color */
+  color: #424242; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+form button[type="submit"]:hover {
+  background-color: #B7DBD6; /* Darker background color on hover */
+  color: #424242; /* Change text color on hover */
+}
+
+/* Styles for delete buttons */
+button.delete-button {
+  padding: 8px 12px; /* Add padding */
+  background-color: #FF6F61; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+button.delete-button:hover {
+  background-color: #E74C3C; /* Darker background color on hover */
+}

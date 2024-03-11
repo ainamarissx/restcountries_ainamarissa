@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Travel Tracker</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="flyyy.png" alt="Travel Tracker Logo"> <!-- Logo -->
+            <h1 onclick="goToWelcomePage()">Travel Tracker</h1> <!-- Header title -->
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Welcome to Travel Tracker</h2> <!-- Main heading -->
+        <p>Keep track of where you've been and explore new destinations!</p> <!-- Description -->
+        <!-- Buttons for navigating to different sections -->
+        <button onclick="goToSearchPage()">Explore Countries</button>
+        <button onclick="goToAddTripDetails()">Trip Organiser</button>
+        <button onclick="goToAddVisitedPage()">Country Tracker</button>
+    </div>
+
+    <!-- Dropdown for filtering countries by region -->
+    <div class="dropdown">
+        <label for="region">Filter by Region:</label> <!-- Dropdown label -->
+        <select id="region" onchange="filterCountries()"> <!-- Dropdown menu -->
+            <option value="">All Regions</option> <!-- Option for all regions -->
+            <option value="Africa">Africa</option> <!-- Option for Africa -->
+            <option value="Americas">Americas</option> <!-- Option for Americas -->
+            <option value="Asia">Asia</option> <!-- Option for Asia -->
+            <option value="Europe">Europe</option> <!-- Option for Europe -->
+            <option value="Oceania">Oceania</option> <!-- Option for Oceania -->
+        </select>
+    </div>
+
+    <div class="countries" id="countries"></div> <!-- Container for displaying countries -->
+
+    <footer>
+        <p>&copy; 2024 Travel Tracker. All rights reserved.</p> <!-- Footer with copyright information -->
+    </footer>
+
+    <script src="main.js"></script> <!-- JavaScript file -->
+</body>
+</html>

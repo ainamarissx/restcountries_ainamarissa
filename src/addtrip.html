@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <link rel="stylesheet" href="addtrip.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <!-- Header section containing logo and title -->
+        <div class="header-container">
+            <img src="flyyy.png" alt="Travel Tracker Logo"> <!-- Logo image -->
+            <h1 onclick="goToWelcomePage()">Travel Tracker</h1> <!-- Title with onclick event to go back to welcome page -->
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Container for main content -->
+        <h2>Crafting the perfect journey, every detail tailored for adventure</h2> <!-- Heading -->
+        <br>
+        <!-- Buttons for adding trip and going back to welcome page -->
+        <button onclick="openTripForm()">Add Trip</button>
+        <button onclick="goToWelcomePage()">Back</button>
+        <br>
+        <br>
+        <div id="trip-form" style="display: none;">
+            <!-- Form for adding trip details, initially hidden -->
+            <form id="add-trip-form" onsubmit="addTrip(event)">
+                <!-- Form inputs for trip details -->
+                <label for="tripTitle">Trip Name:</label>
+                <input type="text" id="tripTitle" name="tripTitle" required><br><br>
+                <label for="countryName">Country Name:</label>
+                <input type="text" id="countryName" name="countryName" required><br><br>
+                <label for="editorName">Editor Name:</label>
+                <input type="text" id="editorName" name="editorName" required><br><br>
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required><br><br>
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" required><br><br>
+                <label for="pax">Number of Pax:</label>
+                <input type="number" id="pax" name="pax" required><br><br>
+                <label for="budget">Budget:</label>
+                <input type="number" id="budget" name="budget" required><br><br>
+                <!-- Submit button to add trip -->
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <br>
+        <div id="trip-details"></div> <!-- Container to display trip details -->
+        <br>
+    </div>
+
+    <footer>
+        <!-- Footer section -->
+        <p>&copy; 2024 Travel Tracker. All rights reserved.</p> <!-- Footer text -->
+    </footer>
+    <script src="main.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

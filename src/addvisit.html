@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country List</title>
+    <link rel="stylesheet" href="addvisit.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="flyyy.png" alt="Travel Tracker Logo"> <!-- Travel Tracker Logo -->
+            <h1 onclick="goToWelcomePage()">Travel Tracker</h1> <!-- Clickable title to go back to welcome page -->
+        </div>
+    </header>
+    
+    <h2>Wanderlust Chronicles: Countries Explored & Bucket List Gems</h2> <!-- Page heading -->
+    <button onclick="goToWelcomePage()">Back</button> <!-- Button to go back to welcome page -->
+    
+    <div id="formsContainer"> <!-- Container for forms -->
+        <div id="wishlistForm"> <!-- Form to add items to wishlist -->
+            <h3>Add to Wishlist:</h3> <!-- Form heading -->
+            <form id="addToWishlistForm"> <!-- Form for adding wishlist items -->
+                <label for="wishlistItem">Country:</label> <!-- Input field label for country -->
+                <input type="text" id="wishlistItem" name="wishlistItem"> <!-- Input field for country -->
+                <label for="wishlistDetails">Details:</label> <!-- Input field label for details -->
+                <input type="text" id="wishlistDetails" name="wishlistDetails"> <!-- Input field for details -->
+                <button type="submit" onclick="addToWishlist(event)">Add</button> <!-- Button to add item to wishlist -->
+            </form>
+        </div>
+        
+        <div id="placesVisitedForm"> <!-- Form to add visited places -->
+            <h3>Places Visited:</h3> <!-- Form heading -->
+            <form id="addVisitedPlaceForm"> <!-- Form for adding visited places -->
+                <label for="visitedItem">Country:</label> <!-- Input field label for country -->
+                <input type="text" id="visitedItem" name="visitedItem"> <!-- Input field for country -->
+                <label for="visitedDetails">Details:</label> <!-- Input field label for details -->
+                <input type="text" id="visitedDetails" name="visitedDetails"> <!-- Input field for details -->
+                <button type="submit" onclick="addVisitedPlace(event)">Add</button> <!-- Button to add visited place -->
+            </form>
+        </div>
+    </div>
+
+    <div id="titlesContainer"> <!-- Container for wishlist and visited places titles -->
+        <div>
+            <h3 id="wishlistTitle">Wishlist:</h3> <!-- Wishlist title -->
+            <ul id="wishlistItems"></ul> <!-- List to display wishlist items -->
+        </div>
+        <div>
+            <h3 id="placesVisitedTitle">Places Visited:</h3> <!-- Visited places title -->
+            <ul id="visitedItems"></ul> <!-- List to display visited places -->
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Travel Tracker. All rights reserved.</p> <!-- Footer with copyright information -->
+    </footer>
+    <script src="main.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>

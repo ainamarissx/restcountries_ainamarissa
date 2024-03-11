@@ -1,0 +1,234 @@
+/* Apply basic styles to the entire body */
+body {
+  font-family: Arial, sans-serif; /* Set the font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f1e9e1; /* Set background color */
+  animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+      opacity: 1; /* End with opacity 1 */
+  }
+}
+
+/* Container styles */
+.container {
+  max-width: 800px; /* Set maximum width */
+  margin: 20px auto; /* Center horizontally with top and bottom margin */
+  text-align: center; /* Center align text */
+  color: #424242; /* Set text color */
+  animation: slideIn 1s ease-in-out; /* Apply slide-in animation */
+  overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+
+/* Animation for sliding in */
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px); /* Start from 50px above */
+      opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+      transform: translateY(0); /* End at original position */
+      opacity: 1; /* End with opacity 1 */
+  }
+}
+
+/* Button group styles */
+.button-group {
+  display: flex; /* Arrange buttons in a row */
+  align-items: center; /* Align items vertically */
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px; /* Set padding */
+  background-color: #cfe0d8; /* Set background color */
+  color: #424242; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add rounded corners */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+  margin-left: 10px; /* Add margin on the left */
+}
+
+/* Button hover styles */
+button:hover {
+  background-color: #B7DBD6; /* Darken background color on hover */
+  color: #424242; /* Change text color on hover */
+}
+
+
+/* Animation for zooming in */
+@keyframes zoomIn {
+  from {
+      transform: scale(0); /* Start from zero size */
+  }
+  to {
+      transform: scale(1); /* End with original size */
+  }
+}
+
+/* Header styles */
+header {
+  background-color: #B7DBD6; /* Set background color */
+  color: #424242; /* Set text color */
+  padding: 10px 0; /* Set padding */
+}
+
+/* Header container styles */
+.header-container {
+  display: flex; /* Arrange elements in a row */
+  max-width: 800px; /* Set maximum width */
+  align-items: center; /* Align items vertically */
+}
+
+/* Header image styles */
+.header-container img {
+  width: 15%; /* Set width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add margin on the right */
+  border-radius: 50%; /* Make it round */
+  margin-left: 10%; /* Add margin on the left */
+  animation: rotate 2s linear infinite; /* Apply rotation animation */
+}
+
+/* Animation for rotation */
+@keyframes rotate {
+  from {
+      transform: rotate(0deg); /* Start from 0 degrees */
+  }
+  to {
+      transform: rotate(360deg); /* End at 360 degrees */
+  }
+}
+
+/* Header title styles */
+header h1 {
+  margin: 3%; /* Set margin */
+  font-size: 36px; /* Set font size */
+  color: #333; /* Set text color */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Add text shadow */
+}
+
+/* Header title hover styles */
+header h1:hover {
+  cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #B7DBD6; /* Set background color */
+  color: #424242; /* Set text color */
+  padding: 10px 0; /* Set padding */
+  position: fixed; /* Fix position */
+  bottom: 0; /* Align to bottom */
+  width: 100%; /* Set width to 100% */
+  text-align: center; /* Center align text */
+  animation: slideInUp 1s ease-in-out; /* Apply slide-in animation */
+}
+
+/* Animation for sliding in from bottom */
+@keyframes slideInUp {
+  from {
+      transform: translateY(100%); /* Start from below */
+  }
+  to {
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+/* CSS for Form Container */
+.form-container {
+  position: fixed; /* Fix the position */
+  top: 20px; /* Adjust the top position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  max-width: 90%; /* Limit the width to 90% of the viewport width */
+  background-color: #efe4db; /* Set background color */
+  padding: 20px; /* Set padding */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+  text-align: left; /* Left align text */
+  z-index: 1; /* Ensure it stays above other content */
+}
+
+/* CSS for Trip Form */
+#trip-form {
+  display: block; /* Display as block */
+  background-color: #fff8f0; /* Set background color */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+  padding: 20px; /* Set padding */
+  margin-bottom: 20px; /* Add margin at the bottom */
+  bottom: 0; /* Align to bottom */
+  left: 0; /* Align to left */
+}
+
+/* Label styles within Trip Form */
+#trip-form label {
+  display: block; /* Display labels on their own line */
+  margin-bottom: 10px; /* Add margin between labels and inputs */
+}
+
+/* Input styles within Trip Form */
+#trip-form input[type="text"],
+#trip-form input[type="date"],
+#trip-form input[type="number"] {
+  width: 100%; /* Make inputs full width */
+  padding: 10px; /* Set padding */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add rounded corners */
+  margin-bottom: 15px; /* Add margin between inputs */
+  box-sizing: border-box; /* Include padding and border in total width and height */
+}
+
+/* Submit button styles within Trip Form */
+#trip-form button[type="submit"] {
+  padding: 10px 20px; /* Set padding */
+  background-color: #cfe0d8; /* Set background color */
+  color: #424242; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s; /* Add smooth transition */
+}
+
+/* Submit button hover styles within Trip Form */
+#trip-form button[type="submit"]:hover {
+  background-color: #B7DBD6; /* Darken background color on hover */
+}
+
+/* Submit button focus styles within Trip Form */
+#trip-form button[type="submit"]:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+
+/* CSS for Trip Card */
+.trip-card {
+  background-color: #fff; /* Set background color */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+  margin-bottom: 20px; /* Add margin at the bottom */
+  padding: 20px; /* Set padding */
+  width: 90%; /* Set width to 90% */
+  margin: 0 auto; /* Center horizontally */
+  margin-bottom: 5%; /* Add margin at the bottom */
+}
+
+/* Title styles within Trip Card */
+.trip-card h3 {
+  margin-top: 0; /* Remove top margin for the title */
+  color: #333; /* Set title color */
+}
+
+/* Paragraph styles within Trip Card */
+.trip-card p {
+  margin-bottom: 10px; /* Add margin at the bottom */
+}

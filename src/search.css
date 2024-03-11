@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif; /* Set font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f1e9e1; /* Set background color */
+  animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+  }
+}
+
+.container {
+  max-width: 800px; /* Set maximum width */
+  margin: 20px auto; /* Center horizontally with top margin */
+  text-align: center; /* Align text to center */
+  color: #424242; /* Set text color */
+  animation: slideIn 1s ease-in-out; /* Apply slide-in animation */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px); /* Start with vertical translation */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    transform: translateY(0); /* End with no vertical translation */
+    opacity: 1; /* End with opacity 1 */
+  }
+}
+
+.button-group {
+  display: flex; /* Display buttons in a row */
+  align-items: center; /* Align items vertically */
+}
+
+/* Text input styles */
+input[type="text"] {
+  padding: 10px; /* Add padding */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Add border radius */
+  flex: 1; /* Take remaining space in flex container */
+  transition: all 0.3s ease; /* Apply smooth transition */
+}
+
+/* Hover effect for text input */
+input[type="text"]:hover {
+  border-color: #B7DBD6; /* Change border color on hover */
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px; /* Add padding */
+  background-color: #cfe0d8; /* Set background color */
+  color: #424242; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s, color 0.3s; /* Apply smooth transition */
+  margin-left: 10px; /* Add margin to the left */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #B7DBD6; /* Change background color on hover */
+  color: #424242; /* Change text color on hover */
+}
+
+/* Details container styles */
+.details-container {
+  margin-top: 20px; /* Add top margin */
+  background-color: #efe4db; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  text-align: left; /* Align text to left */
+}
+
+/* Paragraph styles inside details container */
+.details-container p {
+  margin: 5px 0; /* Add margin */
+  font-size: 18px; /* Set font size */
+  color: #424242; /* Set text color */
+}
+
+/* Image styles */
+img {
+  border-radius: 4px; /* Add border radius */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  display: block; /* Display as block element */
+  margin: auto; /* Center horizontally */
+  animation: zoomIn 0.5s ease-in-out; /* Apply zoom-in animation */
+}
+
+/* Zoom-in animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0); /* Start with scale 0 */
+  }
+  to {
+    transform: scale(1); /* End with scale 1 */
+  }
+}
+
+/* Header Styles */
+header {
+  background-color: #B7DBD6; /* Set background color */
+  color: #424242; /* Set text color */
+  padding: 10px 0; /* Add padding */
+}
+
+/* Header container styles */
+.header-container {
+  display: flex; /* Display flex container */
+  max-width: 800px; /* Set maximum width */
+  align-items: center; /* Align items vertically */
+}
+
+/* Logo styles */
+.header-container img {
+  width: 15%; /* Set width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add right margin */
+  border-radius: 50%; /* Add border radius */
+  margin-left: 10%; /* Add left margin */
+  animation: rotate 2s linear infinite; /* Apply rotate animation */
+}
+
+/* Rotate animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Start with no rotation */
+  }
+  to {
+    transform: rotate(360deg); /* End with full rotation */
+  }
+}
+
+/* Header title styles */
+header h1 {
+  margin: 3%; /* Add margin */
+  font-size: 36px; /* Set font size */
+  color: #333; /* Set text color */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Add text shadow */
+}
+
+/* Hover effect for header title */
+header h1:hover {
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #B7DBD6; /* Set background color */
+  color: #424242; /* Set text color */
+  padding: 10px 0; /* Add padding */
+  position: fixed; /* Position fixed at the bottom */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Take full width */
+  text-align: center; /* Align text to center */
+  animation: slideInUp 1s ease-in-out; /* Apply slide-in animation */
+}
+
+/* Slide-in animation for footer */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%); /* Start below the viewport */
+  }
+  to {
+    transform: translateY(0); /* End at the bottom */
+  }
+}

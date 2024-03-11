@@ -1,0 +1,188 @@
+body {
+  font-family: Arial, sans-serif; /* Set font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f1e9e1; /* Set background color */
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Set initial opacity to 0 */
+  }
+  to {
+    opacity: 1; /* Set final opacity to 1 */
+  }
+}
+
+.container {
+  max-width: 800px; /* Set maximum width for content */
+  margin: 20px auto; /* Center content horizontally */
+  text-align: center; /* Center text */
+  color: #424242; /* Set text color */
+  animation: slideIn 1s ease-in-out; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px); /* Move content up by 50px */
+    opacity: 0; /* Set initial opacity to 0 */
+  }
+  to {
+    transform: translateY(0); /* Move content back to its original position */
+    opacity: 1; /* Set final opacity to 1 */
+  }
+}
+
+h2 {
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+  color: #333; /* Set text color */
+  font-size: 28px; /* Set font size */
+  font-weight: bold; /* Set font weight to bold */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+button {
+  padding: 10px 20px; /* Set padding for button */
+  background-color: #cfe0d8; /* Set background color */
+  color: #424242; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  margin-right: 10px; /* Add right margin for spacing */
+  font-size: 16px; /* Set font size */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+button:hover {
+  background-color: #B7DBD6; /* Change background color on hover */
+}
+
+/* Header Styles */
+header {
+  background-color: #B7DBD6; /* Set background color */
+  color: #424242; /* Set text color */
+  padding: 10px 0; /* Add padding */
+}
+
+.header-container {
+  display: flex; /* Use flexbox for layout */
+  max-width: 800px; /* Set maximum width for content */
+  align-items: center; /* Align items vertically */
+}
+
+.header-container img {
+  width: 15%; /* Set width for logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add right margin for spacing */
+  border-radius: 50%; /* Make logo round */
+  margin-left: 10%; /* Add left margin for spacing */
+  animation: rotate 2s linear infinite; /* Rotate animation */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Rotate from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees */
+  }
+}
+
+header h1 {
+  margin: 3%; /* Add margin */
+  font-size: 36px; /* Set font size */
+  color: #333; /* Set text color */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Add text shadow */
+}
+
+header h1:hover {
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #B7DBD6; /* Set background color */
+  color: #424242; /* Set text color */
+  padding: 10px 0; /* Add padding */
+  position: fixed; /* Set position to fixed */
+  bottom: 0; /* Align to bottom */
+  width: 100%; /* Set width to full */
+  text-align: center; /* Center text */
+  animation: slideInUp 1s ease-in-out; /* Slide-in animation */
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%); /* Move up by 100% */
+  }
+  to {
+    transform: translateY(0); /* Move back to original position */
+  }
+}
+
+/* Travel-Themed Styles */
+.container p {
+  color: #3f676d; /* Set text color */
+  font-size: 18px; /* Set font size */
+  line-height: 1.6; /* Set line height */
+}
+
+.countries {
+  max-width: 1240px; /* Set maximum width */
+  margin: 20px auto; /* Center horizontally */
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(4, 1fr); /* Define grid columns */
+  gap: 20px; /* Set gap between grid items */
+}
+
+.country-div {
+  background: #cfe0d8; /* Set background color */
+  border: 1px solid #3f676d; /* Set border */
+  padding: 15px; /* Add padding */
+}
+
+img {
+  width: 100%; /* Set width to 100% */
+  height: 150px; /* Set height to 150px */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  border-radius: 4px; /* Add border radius */
+}
+
+@media screen and (max-width: 576px) {
+  .countries {
+    grid-template-columns: repeat(1, 1fr); /* Adjust grid columns for smaller screens */
+  }
+}
+
+/* Add styles for dropdown */
+.dropdown {
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+  margin-left: 5%; /* Add left margin for spacing */
+}
+
+label {
+  margin-right: 10px; /* Add right margin for spacing between label and select */
+}
+
+select {
+  padding: 3px; /* Set padding */
+  border-radius: 4px; /* Add border radius */
+  border: 1px solid #ccc; /* Set border */
+  background-color: #fff; /* Set background color */
+  font-size: 14px; /* Set font size */
+  color: #424242; /* Set text color */
+  cursor: pointer; /* Change cursor */
+}
+
+/* Apply hover effect */
+select:hover {
+  border-color: #999; /* Change border color on hover */
+}
+
+/* Apply focus effect */
+select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #424242; /* Change border color on focus */
+}
